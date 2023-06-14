@@ -46,9 +46,9 @@ public class PartialLinkeText {
 			driver.findElement(By.partialLinkText("KITCHEN"));
 			System.out.println("Element 9 Identified");
 			
-			driver.get("https://www.dream11.com/");
-			driver.findElement(By.partialLinkText("GET APP"));
-			System.out.println("Element 10 Identified");
+			driver.get("https://demo.actitime.com/login.do");
+			driver.findElement(By.partialLinkText("Forgot"));
+			System.out.println("Element 10 identified");
 			
 			
 			
