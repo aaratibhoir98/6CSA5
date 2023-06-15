@@ -5,19 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Click {
+public class Clear {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.fb.com");
-		WebElement password = driver.findElement(By.id("passcontainer"));
-		Thread.sleep(3000);
-		password.click();
-		
-		
+		driver.get("file:///C:/Users/Aarati/Desktop/html/login.html");
+		WebElement textBox = driver.findElement(By.xpath("//input[@type='text']"));
+		textBox.clear();
+		textBox.sendKeys("hello");
+
 	}
 
 }
-
-
